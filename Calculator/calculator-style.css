@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: cursive;
+    background-color: rgb(211, 210, 210);
+ }
+
+main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#calculator {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+    background-color: black;
+    border-radius: 5%;
+    width: 390px;
+    height: 690px;
+
+}
+
+#heading {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#display-screen {
+    background-color: rgb(29, 29, 29);
+    width: inherit;
+    height: 190px;
+    font-size: 2.3em;
+    color: white;
+    overflow-wrap: break-word;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items:flex-end; */
+}
+
+button {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    font-family: cursive;
+    font-size: 2.4em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttons-div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.buttons-div > div {
+    display: flex;
+    width: 100%;
+}
+
+.buttons-div > div:nth-child(1){
+justify-content: space-around;
+}
+.buttons-div > div:nth-child(2){
+justify-content: space-around;
+}
+.buttons-div > div:nth-child(3){
+justify-content: space-around;
+}
+.buttons-div > div:nth-child(4){
+justify-content: space-around;
+}
+.buttons-div > div:nth-child(5){
+justify-content: space-around;
+}
+
+.clear-button {
+    width: 270px;
+    height: 77px;
+    border-radius: 50%;
+    color: white;
+    background-color: #707070;
+    font-size: 2.6em;
+}
+
+.clear-button:hover {
+    width: 270px;
+    height: 77px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(153, 153, 153);
+    font-size: 3.2em;
+}
+
+.fifth-row .num:nth-child(1) {
+    width: 77px;
+    height: 77px;}
+
+.num {
+    background-color: #a3a2a2 ;
+    color: white;
+
+}
+
+.num:hover{
+    background-color: #cccccc ;
+    color: white;
+
+}
+
+.operator {
+    background-color: #ffaa00;
+    color: white;
+
+}
+
+.operator:hover {
+    background-color: #ffce6c;
+    color: white;
+}
+
+#decimal {
+    background-color: #888888 ;
+    color: white;
+}
+
+#decimal:hover {
+    background-color: #cccccc ;
+    color: white;
+}
+
+#negation {
+    background-color: #888888 ;
+    color: white;
+}
+
+#negation:hover {
+ background-color: #cccccc ;
+    color: white;
+}
+
+.equal-sign {
+    background-color: #ff8800;
+    color: white;
+}
+
+.equal-sign:hover {
+    background-color: #ff9f31;
+    color: white;
+    font-size: 3.3em;
+}
+
+
+/* IF YOU DIVIDE BY ZERO !!! */
+
+@keyframes twistCalculator {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  5% {
+    transform: rotate(360deg);
+  }
+  
+  80% {
+    transform: rotate(-180deg);
+  }
+
+  80% {
+      opacity: 1;
+  }
+
+ 100%{
+    transform: translate3d(0,2000px,0);
+    opacity: 0;
+  }
+}
+
+.twistCalculator:hover {
+    animation-name: twistCalculator;
+    animation-duration: 3.8s;
+    animation-delay: 0.5s;
+}
+
+/* #calculator:hover {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+    background-color: #000000;
+    border-radius: 5%;
+    width: 380px;
+    height: 650px;
+
+
+    animation-name: twistCalculator;
+    animation-duration: 3.5s;
+} */
+
+
